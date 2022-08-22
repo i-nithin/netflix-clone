@@ -33,7 +33,7 @@ const App = () => {
     });
 
     return () => {}
-  }, []);
+  });
 
   return (
     <>
