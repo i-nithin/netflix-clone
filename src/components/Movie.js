@@ -11,7 +11,7 @@ const Movie = ( { key, item, like, setLike} ) => {
   const [ saved, setSaved ] = useState(false)
   const user = useSelector(selectUser)
   const movieId = doc(db, 'users', `${user?.email}`)
-  console.log(user?.email)
+  console.log(saved)
   const saveShows = async() => {
     if(user) {
       setLike(!like)
